@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <html>
+<head>
+<script type="text/javascript">
+function check1()
+{
+var pwd1=document.getElementById("pwd1");
+var pwd2=document.getElementById("pwd2");
+if(pwd1.value=="")
+{
+alert("empty password");
+pwd1.focus();
+return false;
+}
+else
+if(pwd1.value!=pwd2.value)
+{
+alert("password does not match");
+pwd1.focus();
+pwd1.select();
+return false;
+}
+else
+{
+alert("valid password");
+return true;
+}
+}
+</script>
+</head>
+<body>
+<form >
+Username:<input type="text" name="name"/>
+Password:<input type="password" id="pwd1"/>
+Confirm Password:<input type="password" id="pwd2"/>
+<button onclick="check1">submit</button>
+<input type="reset" value="reset" />
+</form>
+</body>
+</html>

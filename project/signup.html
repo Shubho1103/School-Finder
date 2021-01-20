@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Signup</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function check1()
+      {
+      var pwd1=document.getElementById("pwd1");
+      var pwd2=document.getElementById("pwd2");
+      if(pwd1.value=="")
+      {
+      alert("empty password");
+      pwd1.focus();
+      return false;
+      }
+      else
+      if(pwd1.value!=pwd2.value)
+      {
+      alert("password does not match");
+      pwd1.focus();
+      pwd1.select();
+      return false;
+      }
+      else
+      {
+      alert("valid password");
+      return true;
+      }
+      }
+      </script>
+      
+    
+</head>
+<style>
+#c_1{
+	margin-bottom: 15px;;
+    border: 1px solid #f4f4f4;
+	box-shadow: 0px 2px 2px rgba(35, 1, 66, 0.3);
+    padding: 40px 50px ;
+    padding: top 30px;  
+	width: 425px;
+    margin:auto;
+    background-color: white ;
+    opacity: 0.8;
+
+}
+
+body {
+  background-image: url("gurukul.jfif");
+  height: 10%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering:pixelated;
+ 
+  
+}
+table, th, td {
+ 
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+
+
+</style>
+<body><br>
+    <br>
+<div class="c_11" align="center">
+<p >
+    <table>
+        <tr>
+            <th>
+    <div class="container" id="c_1">
+
+                    <h1  style="color:rgb(41, 121, 148); font-family: Verdana, Geneva, Tahoma, sans-serif  ;" ><b>SIGNUP<b></h1>
+                  
+
+<br>
+<br>
+
+        
+<script type="text/javascript">
+  function check1()
+  {
+  var pwd1=document.getElementById("pwd1");
+  var pwd2=document.getElementById("pwd2");
+  if(pwd1.value=="")
+  {
+  alert("empty password");
+  pwd1.focus();
+  return false;
+  }
+  else
+  if(pwd1.value!=pwd2.value)
+  {
+  alert("password does not match");
+  pwd1.focus();
+  pwd1.select();
+  return false;
+  }
+  else
+  {
+  alert("valid password");
+  return true;
+  }
+  }
+  </script>
+
+
+        <div class="signup">
+            <form id="f_1" onsubmit="return check1()" method="post" action="S_signup.php">
+           
+              <div class="form-group"  ;>
+                <input type="text" name="firstname" class="form-control" id="f_name" placeholder="FIRST NAME" required>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="lastname" class="form-control" id="l_name" placeholder="LAST NAME" required>
+              </div>
+              <div class="form-group"  ;>
+                <input type="text" name="user" class="form-control" id="u_name" placeholder="USERNAME" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" id="email" placeholder="EMAIL" required>
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" class="form-control" id="pwd1" placeholder="PASSWORD" required>
+              </div>
+              <div class="form-group">
+                <input type="password" name="cpassword" class="form-control" id="pwd2" placeholder="CONFIRM PASSWORD" required >
+              </div>
+              
+                <input type="submit" value="SIGNUP" >
+            
+      
+            
+                </form>
+            </div>
+          </div>
+        </th>
+        <th>
+            <div class="container" id="c_1">
+                <div class="login">
+                    
+                    <form id="f_1" action="L_login.php" method="POST">
+            <h1  style="color:rgb(41, 121, 148); font-family: Verdana, Geneva, Tahoma, sans-serif  ;" ><b>LOGIN<b></h1>
+                <br>
+                <br>
+                <div class="form-group">
+                <input type="text" class="form-control" name="user" id="user" placeholder="USERNAME" required="required">
+              </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="pass" name="password" placeholder="PASSWORD" required>
+              </div>
+              
+              <br>
+              <br>
+              
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <input type="submit" value="LOGIN" >
+        </form></div>
+        </div>
+        </th>
+        </tr>
+        </table>
+        </p> 
+    </div>
+</body>
+</html>
+
+    
